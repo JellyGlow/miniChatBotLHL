@@ -4,12 +4,21 @@
 
 //EVENT DRIVEN PROGRAMMING!
 
+var socket = io();
+//the socket now is a reference to the socket.io library
+
+
 $('form').on('submit', function() {
   var text = $('#message').val();
-  alert(text);
+  socket.emit('message', text);
+  $('#message').val('');
   return false;
 });
 
 //lastly "return false" tells it to cancel its automatic sending to the server. Here it doesn't need to go that far.
+
+socket.on('message', function (msg) {
+  $('<li>').text(msg).appendTo('#history');
+});
 
 //SERVER-SIDE LOGIC IS WHAT SEPERATES A SITE FROM AN APP.

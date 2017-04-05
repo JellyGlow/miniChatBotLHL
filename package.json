@@ -1,0 +1,21 @@
+{
+  "name": "lighthouseJSproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JellyGlow/miniChatBotLHL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JellyGlow/miniChatBotLHL/issues"
+  },
+  "homepage": "https://github.com/JellyGlow/miniChatBotLHL#readme"
+}
